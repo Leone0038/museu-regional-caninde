@@ -15,7 +15,7 @@ export default function HomePage() {
                     <h1 className="xl:text-4xl sm:text-2xl text-xl font-bold">
                         Museu de Canindé:
                     </h1>
-                    <h1 className="xl:text-4xl text-2xl text-xl font-bold pb-4">
+                    <h1 className="xl:text-4xl sm:text-2xl text-xl font-bold pb-4">
                         A Renascença de um Legado
                     </h1>
                     <h2 className="xl:text-2xl sm:text-xl text-lg">
