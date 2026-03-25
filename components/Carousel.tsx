@@ -65,23 +65,29 @@ export default function Carousel() {
                 </div>
                 <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                     <div className="flex justify-between gap-20 w-full p-1">
-                        <button type="button" className="pointer-events-auto transition-transform duration-300 hover:scale-110">
+                        <button
+                            type="button"
+                            onClick={previousImage}
+                            className="pointer-events-auto transition-transform duration-300 hover:scale-110"
+                        >
                             <Image
                                 alt="Prev"
                                 src={leftArrow}
                                 width={75}
                                 height={75}
-                                onClick={previousImage}
                                 className="cursor-pointer"
                             />
                         </button>
-                        <button type="button" className="pointer-events-auto transition-transform duration-300 hover:scale-110">
+                        <button
+                            type="button"
+                            onClick={nextImage}
+                            className="pointer-events-auto transition-transform duration-300 hover:scale-110"
+                        >
                             <Image
                                 alt="Next"
                                 src={rightArrow}
                                 width={75}
                                 height={75}
-                                onClick={nextImage}
                                 className="cursor-pointer"
                             />
                         </button>
