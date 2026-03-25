@@ -37,63 +37,72 @@ export default function GalleryPage() {
     };
 
     return (
-        <section className="flex-1 p-16 bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed grid place-items-center">
-            <div className="rounded-lg shadow w-full max-w-200 md:aspect-video aspect-square relative overflow-hidden">
-                <div
-                    className="flex w-full h-full transition duration-500 ease-in-out"
-                    style={{
-                        transform: `translateX(-${currentImageIndex * 100}% )`,
-                    }}
-                >
-                    {carouselImagesPaths.map((path, i) => (
-                        <div
-                            className="w-full h-full shrink-0 relative"
-                            key={i}
-                        >
-                            <Image
-                                alt={`Foto do interior do museu ${i + 1}`}
-                                src={path}
-                                fill
-                                priority={i === 0}
-                                className="object-cover cursor-zoom-in"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw"
-                                onClick={openModal}
-                            />
+        <>
+            <section className="flex-1 p-16 grid place-items-center">
+                <div className="rounded-lg shadow w-full max-w-200 md:aspect-video aspect-square relative overflow-hidden">
+                    <div
+                        className="flex w-full h-full transition duration-500 ease-in-out"
+                        style={{
+                            transform: `translateX(-${currentImageIndex * 100}% )`,
+                        }}
+                    >
+                        {carouselImagesPaths.map((path, i) => (
+                            <div
+                                className="w-full h-full shrink-0 relative"
+                                key={i}
+                            >
+                                <Image
+                                    alt={`Foto do interior do museu ${i + 1}`}
+                                    src={path}
+                                    fill
+                                    priority={i === 0}
+                                    className="object-cover cursor-zoom-in"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw"
+                                    onClick={openModal}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                    <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+                        <div className="flex justify-between gap-20 w-full p-1">
+                            <button
+                                type="button"
+                                className="pointer-events-auto"
+                            >
+                                <Image
+                                    alt="Prev"
+                                    src={"/icons/left-arrow.svg"}
+                                    width={75}
+                                    height={75}
+                                    onClick={previousImage}
+                                    className="cursor-pointer"
+                                />
+                            </button>
+                            <button
+                                type="button"
+                                className="pointer-events-auto"
+                            >
+                                <Image
+                                    alt="Next"
+                                    src={"/icons/right-arrow.svg"}
+                                    width={75}
+                                    height={75}
+                                    onClick={nextImage}
+                                    className="cursor-pointer"
+                                />
+                            </button>
                         </div>
-                    ))}
-                </div>
-                <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-                    <div className="flex justify-between gap-20 w-full p-2">
-                        <button type="button" className="pointer-events-auto">
-                            <Image
-                                alt="Prev"
-                                src={"/icons/left-arrow.svg"}
-                                width={75}
-                                height={75}
-                                onClick={previousImage}
-                                className="cursor-pointer"
-                            />
-                        </button>
-                        <button type="button" className="pointer-events-auto">
-                            <Image
-                                alt="Next"
-                                src={"/icons/right-arrow.svg"}
-                                width={75}
-                                height={75}
-                                onClick={nextImage}
-                                className="cursor-pointer"
-                            />
-                        </button>
                     </div>
                 </div>
-            </div>
-            {showModal && (
-                <Modal
-                    imageIndex={currentImageIndex}
-                    imagePath={carouselImagesPaths[currentImageIndex]}
-                    setShowModal={setShowModal}
-                />
-            )}
-        </section>
+                {showModal && (
+                    <Modal
+                        imageIndex={currentImageIndex}
+                        imagePath={carouselImagesPaths[currentImageIndex]}
+                        setShowModal={setShowModal}
+                    />
+                )}
+            </section>
+            <div className="fixed inset-0 -z-10 bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed"></div>
+        </>
     );
 }
