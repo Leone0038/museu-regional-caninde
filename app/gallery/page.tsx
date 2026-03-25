@@ -37,7 +37,7 @@ export default function GalleryPage() {
     };
 
     return (
-        <section className="flex-1 p-16 bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed border grid place-items-center">
+        <section className="flex-1 p-16 bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed grid place-items-center">
             <div className="rounded-lg shadow w-full max-w-200 md:aspect-video aspect-square relative overflow-hidden">
                 <div
                     className="flex w-full h-full transition duration-500 ease-in-out"

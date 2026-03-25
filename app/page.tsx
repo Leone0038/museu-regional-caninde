@@ -11,7 +11,7 @@ export default function HomePage() {
                     controls
                     className="rounded-lg shadow"
                 ></video>
-                <div className="p-10 shadow bg-gray-950/80 rounded-2xl">
+                <div className="p-8 shadow bg-gray-950/80 rounded-2xl">
                     <h1 className="xl:text-4xl sm:text-2xl text-xl font-bold">
                         Museu de Canindé:
                     </h1>
