@@ -11,7 +11,7 @@ export default function NavBar() {
     return (
         <nav className="flex gap-8 flex-wrap justify-center">
             {links.map(({ href, label }, i) => (
-                <Link href={href} key={i}>{label}</Link>
+                <Link className='text-shadow-lg shadow-black' href={href} key={i}>{label}</Link>
             ))}
         </nav>
     );

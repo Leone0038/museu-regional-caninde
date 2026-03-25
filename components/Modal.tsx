@@ -7,12 +7,12 @@ export default function Modal({
     setShowModal,
 }: ModalProps) {
     return (
-        <section className="fixed z-50 p-10 inset-0 grid place-items-center backdrop-blur-sm bg-slate-300/10">
+        <section className="fixed z-50 p-5 inset-0 grid place-items-center backdrop-blur-sm bg-slate-300/10">
             <div className="relative flex flex-col">
                 <Image
                     src={imagePath}
                     alt={`Foto do interior do museu ${imageIndex + 1}`}
-                    width={1300}
+                    width={1450}
                     height={200}
                     className="object-cover rounded-lg shadow-2xl aspect-auto"
                 />
