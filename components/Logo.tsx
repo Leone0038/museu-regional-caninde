@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import museumLogo from '@/assets/museum-logo.webp'
 
 export default function Logo() {
     const router = useRouter();
@@ -9,7 +10,7 @@ export default function Logo() {
     };
     return (
         <Image
-            src={"icon.svg"}
+            src={museumLogo}
             alt="Logo do museu regional de canindé"
             priority
             width={75}

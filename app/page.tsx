@@ -4,13 +4,15 @@ export default function HomePage() {
             <section className="flex-1 flex flex-col justify-center items-center text-amber-50 lg:p-16 p-4">
                 <div className="p-6 flex flex-col gap-10 md:w-2/4 w-9/10">
                     <video
-                        src="/museum-video.webm"
+                        src="/videos/museum-video.webm"
                         playsInline
                         autoPlay
                         loop
                         muted
                         controls
                         className="rounded-lg shadow"
+                        preload="metadata"
+                        poster="/images/museum-video-poster.webp"
                     ></video>
                     <div className="p-6 shadow bg-gray-950/80 rounded-2xl">
                         <h1 className="xl:text-4xl sm:text-2xl text-xl font-bold">
