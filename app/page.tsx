@@ -14,7 +14,7 @@ export default function HomePage() {
                         preload="metadata"
                         poster="/images/museum-video-poster.webp"
                     ></video>
-                    <div className="p-6 shadow bg-gray-950/80 rounded-2xl">
+                    <div className="p-6 shadow bg-gray-950/80 rounded-2xl leading-normal">
                         <h1 className="xl:text-4xl sm:text-2xl text-xl font-bold">
                             Museu de Canindé:
                         </h1>

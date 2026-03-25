@@ -2,7 +2,7 @@ export default function AboutPage() {
     return (
         <>
             <section className="flex-1 flex justify-center items-center text-amber-50">
-                <div className="flex flex-col gap-16 p-6 text-xl">
+                <div className="flex flex-col gap-16 p-6 text-xl leading-normal">
                     <p className="p-8 shadow bg-gray-950/80 rounded-2xl">
                         <strong>Legado de Fé:</strong> Fundado em 1973, abriga
                         mais de 5.000 peças doadas por romeiros, representando

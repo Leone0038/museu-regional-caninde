@@ -93,6 +93,7 @@ export default function Carousel() {
                     imageIndex={currentImageIndex}
                     imagePath={carouselImagesPaths[currentImageIndex]}
                     setShowModal={setShowModal}
+                    showModal={showModal}
                 />
             )}
         </section>

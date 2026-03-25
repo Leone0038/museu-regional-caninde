@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const links = [
-    { href: "/about", label: "Sobre" },
-    { href: "/contacts", label: "Contate-nos" },
-    { href: "/gallery", label: "Acervo" },
-    { href: "/news", label: "Notícias" },
+    { href: "/sobre", label: "Sobre" },
+    { href: "/contatos", label: "Contate-nos" },
+    { href: "/acervo", label: "Acervo" },
+    { href: "/noticias", label: "Notícias" },
 ];
 
 export default function NavBar() {
