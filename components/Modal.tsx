@@ -1,6 +1,5 @@
 import { ModalProps } from "@/types";
 import Image from "next/image";
-import closeSvg from "@/assets/close.svg";
 import { useEffect, useState } from "react";
 
 export default function Modal({
@@ -25,6 +24,7 @@ export default function Modal({
     return (
         <section
             className={`fixed z-50 p-5 inset-0 grid place-items-center backdrop-blur-sm bg-slate-900/40 transition-opacity duration-300 ease-in-out opacity-${isAnimate ? 100 : 0}`}
+             onClick={handleClose}
         >
             <div
                 className={`relative flex flex-col transition-all duration-300 ease-out transform ${isAnimate ? "scale-100 translate-y-0" : "scale-95 translate-y-4"}`}
@@ -35,14 +35,7 @@ export default function Modal({
                     width={1450}
                     height={200}
                     className="object-cover rounded-lg shadow-2xl aspect-auto"
-                />
-                <Image
-                    src={closeSvg}
-                    alt="Close modal button"
-                    width={50}
-                    height={50}
-                    className="absolute self-end cursor-pointer"
-                    onClick={handleClose}
+                    
                 />
             </div>
         </section>
