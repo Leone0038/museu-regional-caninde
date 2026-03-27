@@ -34,7 +34,7 @@ export default function Modal({
                     alt={`Foto do interior do museu ${imageIndex + 1}`}
                     width={1450}
                     height={200}
-                    className="object-cover rounded-lg shadow-2xl aspect-auto"
+                    className="object-cover rounded-lg shadow-2xl"
                     
                 />
             </div>

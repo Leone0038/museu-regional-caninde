@@ -38,7 +38,7 @@ export default function Carousel() {
         setShowModal(true);
     };
     return (
-        <section className="flex-1 p-16 grid place-items-center">
+        <>
             <div className="rounded-lg shadow-xl shadow-neutral-900 w-full max-w-200 md:aspect-video aspect-square relative overflow-hidden">
                 <div
                     className="flex w-full h-full transition duration-500 ease-in-out"
@@ -102,6 +102,6 @@ export default function Carousel() {
                     showModal={showModal}
                 />
             )}
-        </section>
+        </>
     );
 }

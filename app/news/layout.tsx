@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Notícias",
+    title: "Notícias - Museu Regional de Canindé",
 };
 
 export default function NewsPageLayout({
