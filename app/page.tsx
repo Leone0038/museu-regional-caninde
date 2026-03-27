@@ -9,7 +9,7 @@ export default function HomePage() {
                     loop
                     muted
                     controls
-                    className="rounded-lg shadow"
+                    className="rounded-lg shadow-xl shadow-neutral-900"
                     preload="metadata"
                     poster="/images/museum-video-poster.webp"
                 ></video>
