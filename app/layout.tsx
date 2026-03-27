@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR" className={`h-full antialiased`}>
-            <body className="min-h-full flex flex-col text-shadow-lg shadow-black">
+            <body className="min-h-full flex flex-col text-shadow-lg shadow-black bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed">
                 <Header />
-                <main className="flex-1 flex">{children}</main>
+                {children}
                 <Footer />
             </body>
         </html>
