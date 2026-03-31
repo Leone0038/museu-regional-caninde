@@ -32,7 +32,7 @@ export default function Modal({
                 <Image
                     src={imagePath}
                     alt={`Foto do interior do museu ${imageIndex + 1}`}
-                    width={1450}
+                    width={1300}
                     height={200}
                     className="object-cover rounded-lg shadow-2xl"
                     
