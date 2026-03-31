@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClientWrapper from "@/components/ClientWrapper";
 
 export const metadata: Metadata = {
     title: "Museu Regional de Canindé",
@@ -16,14 +17,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR" className={`h-full antialiased`}>
-            <body className="min-h-full flex flex-col text-shadow-lg shadow-black ">
+            <ClientWrapper>
                 <Header />
                 <main className="flex-1 lg:p-16 p-8 grid place-items-center text-amber-50">
                     {children}
                 </main>
                 <Footer />
-                
-            </body>
+            </ClientWrapper>
         </html>
     );
 }
