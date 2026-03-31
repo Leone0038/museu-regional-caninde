@@ -6,18 +6,10 @@ import { useState } from "react";
 import leftArrow from "@/assets/left-arrow.svg";
 import rightArrow from "@/assets/right-arrow.svg";
 
-const carouselImagesPaths = [
-    "/images/carousel/carousel-1.webp",
-    "/images/carousel/carousel-2.webp",
-    "/images/carousel/carousel-3.webp",
-    "/images/carousel/carousel-4.webp",
-    "/images/carousel/carousel-5.webp",
-    "/images/carousel/carousel-6.webp",
-    "/images/carousel/carousel-7.webp",
-    "/images/carousel/carousel-8.webp",
-    "/images/carousel/carousel-9.webp",
-    "/images/carousel/carousel-10.webp",
-];
+const carouselImagesPaths = Array.from(
+    { length: 10 },
+    (_, i) => `/images/carousel/carousel-${i + 1}.webp`,
+);
 
 export default function Carousel() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
