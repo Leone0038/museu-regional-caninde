@@ -16,12 +16,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR" className={`h-full antialiased`}>
-            <body className="min-h-full flex flex-col text-shadow-lg shadow-black bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed">
+            <body className="min-h-full flex flex-col text-shadow-lg shadow-black ">
                 <Header />
                 <main className="flex-1 lg:p-16 p-8 grid place-items-center text-amber-50">
                     {children}
                 </main>
                 <Footer />
+                
             </body>
         </html>
     );
