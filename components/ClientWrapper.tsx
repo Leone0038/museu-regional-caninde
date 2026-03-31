@@ -10,7 +10,7 @@ export default function ClientWrapper({
     const isHome = pathname === "/";
     return (
         <body
-            className={`min-h-full flex flex-col text-shadow-lg shadow-black ${isHome ? "bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed" : "bg-slate-900"}`}
+            className={`min-h-full flex flex-col text-shadow-lg shadow-black ${isHome ? "bg-[url(/images/home-page-portrait.webp)] md:bg-[url(/images/home-page-landscape.webp)] bg-center bg-cover bg-fixed" : "bg-amber-50z"}`}
         >
             {children}
         </body>
