@@ -1,4 +1,5 @@
 export default function HomePage() {
+    
     return (
         <section className="flex-1 grid place-items-center text-amber-50">
             <div className="flex flex-col gap-10 md:w-2/4 w-9/10">
