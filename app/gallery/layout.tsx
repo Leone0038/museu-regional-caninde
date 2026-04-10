@@ -11,8 +11,8 @@ export default function GalleryPageLayout({
 }>) {
     return (
         <>
-        <div className="bg-[url(/images/gallery-page-portrait.webp)] md:bg-[url(/images/gallery-page-landscape.webp)] bg-center bg-cover bg-fixed fixed inset-0 -z-10"></div>
-        {children}
+            <div className="bg-[url(/images/gallery-page-portrait.webp)] md:bg-[url(/images/gallery-page-landscape.webp)] bg-center bg-cover bg-fixed border fixed inset-0 -z-10"></div>
+            {children}
         </>
     );
 }
