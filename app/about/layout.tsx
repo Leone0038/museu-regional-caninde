@@ -11,7 +11,7 @@ export default function AboutPageLayout({
 }>) {
     return (
         <>
-            <div className="bg-[url(/images/about-page-portrait.webp)] md:bg-[url(/images/about-page-landscape.webp)] bg-center bg-cover bg-fixed fixed inset-0 -z-10"></div>
+            <div className="bg-[url(/images/about-page-portrait.webp)] md:bg-[url(/images/about-page-landscape.webp)] bg-center bg-cover fixed inset-0 -z-10"></div>
             {children}
         </>
     );
