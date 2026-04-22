@@ -1,5 +1,4 @@
 export default function HomePage() {
-    
     return (
         <section className="flex-1 grid place-items-center">
             <div className="flex flex-col gap-10 md:w-2/4 w-9/10">
@@ -15,15 +14,16 @@ export default function HomePage() {
                     poster="/images/museum-video-poster.webp"
                 ></video>
                 <div className="p-6 shadow bg-gray-950/80 rounded-2xl leading-normal">
-                    <h1 className="xl:text-4xl text-2xl font-bold">
-                        Museu de Canindé:
+                    <h1 className="xl:text-4xl text-2xl font-bold pb-2">
+                        Zoológico de Canindé:
                     </h1>
                     <h1 className="xl:text-4xl text-2xl font-bold pb-4">
-                        A Renascença de um Legado
+                        O Santuário da Vida no Sertão
                     </h1>
                     <h2 className="xl:text-2xl sm:text-xl text-lg">
-                        Um plano estratégico para garantir a sustentabilidade e
-                        relevância de um patrimônio de fé e memória.
+                        Um plano estratégico para fortalecer o bem-estar animal
+                        e a conservação da biodiversidade sob o olhar de
+                        Francisco.
                     </h2>
                 </div>
             </div>
