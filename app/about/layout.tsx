@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sobre - Zoológico de São Francisco - Canindé",
+    title: "Sobre - Museu Regional de Canindé",
 };
 
 export default function AboutPageLayout({

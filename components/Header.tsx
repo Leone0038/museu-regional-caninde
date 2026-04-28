@@ -9,7 +9,7 @@ export default function Header() {
                 fredoka.className
             }`}
         >
-            <Logo width={120} height={120} priority={true} />
+            <Logo width={75} height={75} priority={true} />
             <NavBar />
         </header>
     );

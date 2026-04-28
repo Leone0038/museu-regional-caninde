@@ -14,10 +14,10 @@ export default function Footer() {
     }, []);
     return (
         <footer className="flex tracking-wide flex-col items-center justify-center p-2 bg-primary text-center text-xs font-semibold uppercase">
-            <Logo width={90} height={90}/>
-            <p>© {year} - Zoológico de São Francisco - Canindé - CE</p>
+            <Logo width={75} height={75}/>
+            <p>© {year} - Museu Regional de Canindé</p>
             <p>
-                Rua do Zoológico, s/n - Centro, Canindé, Ceara, Brazil 62700000
+                Centro, Canindé - Ceará, 62700-000
             </p>
         </footer>
     );

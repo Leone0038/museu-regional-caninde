@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import ScrollToTopBtn from "@/components/ScrollToTopBtn";
 
 export const metadata: Metadata = {
-    title: "Zoológico de São Francisco - Canindé",
+    title: "Museu Regional de Canindé",
     description:
-        "O site tem como fim promover a educação ambiental e auxiliar na conscientização sobre a preservação da biodiversidade global e o respeito à vida selvagem.",
+        "O site tem como fim divulgar e digitalizar o acervo local.",
 };
 import {Fredoka, Nunito} from 'next/font/google'
 

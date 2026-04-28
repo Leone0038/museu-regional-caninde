@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Acervo - Zoológico de São Francisco - Canindé",
+    title: "Acervo - Museu Regional de Canindé",
 };
 
 export default function GalleryPageLayout({

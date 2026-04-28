@@ -15,15 +15,13 @@ export default function HomePage() {
                 ></video>
                 <div className="p-6 shadow bg-gray-950/80 rounded-2xl leading-normal">
                     <h1 className="xl:text-4xl text-2xl font-bold pb-2">
-                        Zoológico de Canindé:
+                        Museu de Canindé:
                     </h1>
                     <h1 className="xl:text-4xl text-2xl font-bold pb-4">
-                        O Santuário da Vida no Sertão
+                        A Renascença de um Legado
                     </h1>
                     <h2 className="xl:text-2xl sm:text-xl text-lg">
-                        Um plano estratégico para fortalecer o bem-estar animal
-                        e a conservação da biodiversidade sob o olhar de
-                        Francisco.
+                        Um plano estratégico para garantir a sustentabilidade e relevância de um patrimônio de fé e memória.
                     </h2>
                 </div>
             </div>

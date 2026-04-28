@@ -44,7 +44,7 @@ export default function Carousel() {
                             key={i}
                         >
                             <Image
-                                alt={`Foto no interior do zoo #${i + 1}`}
+                                alt={`Foto no interior do museu #${i + 1}`}
                                 src={path}
                                 fill
                                 priority={i === 0}
